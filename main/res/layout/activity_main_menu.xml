@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.igor.whowantwillbemillioner.MainMenuActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/themeapp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/viktorina"
+                android:id="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="50dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/startButton"
+                    android:text="Играть"
+                    android:background="@drawable/questionrect"
+                    android:onClick="onClickStart"
+                    />
+                <Button
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginStart="80dp"
+                    android:id="@+id/exitButton"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/questionrect"
+                    android:onClick="onClickExit"
+                    android:text="Выход" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
